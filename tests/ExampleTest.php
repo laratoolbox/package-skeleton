@@ -1,8 +1,8 @@
 <?php
 
-namespace LaraToolbox\Skeleton\Tests;
+namespace LaraToolbox\MyPackage\Tests;
 
-use PHPUnit\Framework\TestCase;
+use Orchestra\Testbench\TestCase;
 
 class ExampleTest extends TestCase
 {

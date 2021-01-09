@@ -1,5 +1,5 @@
 {
-    "name": "laratoolbox/:package_name",
+    "name": ":package_vendor/:package_name",
     "description": ":package_description",
     "license": "MIT",
     "keywords": [
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "LaraToolbox\\Skeleton\\": "src"
+            ":package_vendor\\:package_name\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "LaraToolbox\\Skeleton\\Tests\\": "tests"
+            ":package_vendor\\:package_name\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -40,5 +40,12 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
-    }
+    },
+    "extra": {
+      "laravel": {
+          "providers": [
+              ":package_vendor\\:package_name\\PackageServiceProvider"
+          ]
+      }
+  }
 }

@@ -13,7 +13,7 @@ Laravel >= 5.x
 Install via composer
 
 ```bash
-$ composer require laratoolbox/:package_name
+$ composer require :package_vendor/:package_name
 ```
 
 ## Usage
