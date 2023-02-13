@@ -3,6 +3,7 @@
 $questions = [
     ':package_name' => 'Package Name',
     ':package_vendor' => 'Package Vendor',
+    ':repo_user_name' => 'Repo Username',
     ':package_title' => 'Package Title',
     ':package_description' => 'Package Description',
     ':author_name' => 'Author Name',
@@ -28,7 +29,7 @@ echo <<<_LOGO
  / /___/ /_/ / /  / /_/ / /_/ /_/ / /_/ / / /_/ / /_/ />  <
 /_____/\__,_/_/   \__,_/\__/\____/\____/_/_.___/\____/_/|_|
 
-
+Note : Use dash(-) or underline(_) if vendor name or package name has multi word
 _LOGO;
 
 foreach ($questions as $key => $question) {

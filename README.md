@@ -40,7 +40,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Credits
 
-- [All contributors](https://github.com/laratoolbox/:package_name/graphs/contributors)
+- [All contributors](https://github.com/:repo_user_name/:package_name/graphs/contributors)
 
 ## License
 
