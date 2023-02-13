@@ -1,6 +1,6 @@
 <?php
 
-namespace :package_vendor\:package_name;
+namespace :package_vendor_namespace\:package_name_namespace;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            ":package_vendor\\:package_name\\": "src"
+            ":package_vendor_namespace\\:package_name_namespace\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":package_vendor\\:package_name\\Tests\\": "tests"
+            ":package_vendor_namespace\\:package_name_namespace\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,7 +44,7 @@
     "extra": {
       "laravel": {
           "providers": [
-              ":package_vendor\\:package_name\\PackageServiceProvider"
+              ":package_vendor_namespace\\:package_name_namespace\\PackageServiceProvider"
           ]
       }
   }
