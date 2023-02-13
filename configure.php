@@ -16,6 +16,10 @@ $files =  [
     'src/PackageServiceProvider.php'
 ];
 
+function convertStudlyCase($value) {
+    return str_replace(' ', '', ucwords(str_replace(['-', '_'], ' ', $value)));
+}
+
 echo <<<_LOGO
 
     __                     __              ____
@@ -30,10 +34,12 @@ _LOGO;
 foreach ($questions as $key => $question) {
     $answers[$key] = readline(sprintf('%s : ', $question));
 }
+$answers[':package_name_namespace'] = convertStudlyCase($answers[':package_name']);
+$answers[':package_vendor_namespace'] = convertStudlyCase($answers[':package_vendor']);
 
 foreach ($files as $file) {
     $content = file_get_contents($file);
-    $content = str_replace(array_keys($answers), array_values($answers), $content);
+    $content = str_replace(array_reverse(array_keys($answers)), array_reverse(array_values($answers)), $content);
     file_put_contents($file, $content);
 }
 
